@@ -1,0 +1,122 @@
+Title: Common Drug-Drug Interactions in Cardiovascular and Metabolic Medicine
+
+1. OVERVIEW
+
+Drug-drug interactions (DDIs) remain a significant cause of adverse drug events, particularly in patients with cardiovascular and metabolic diseases who often receive multiple medications. This guide summarizes clinically important interactions relevant to primary care and cardiology practice.
+
+2. ANTIPLATELET AND ANTICOAGULANT INTERACTIONS
+
+2.1 Aspirin + Warfarin
+- Severity: Major
+- Effect: Increased bleeding risk (2-3 fold increase in GI bleeding)
+- Mechanism: Aspirin inhibits platelet aggregation + warfarin inhibits clotting factor synthesis
+- Management: Use lowest aspirin dose (75 mg), maintain INR at lower therapeutic range, add PPI for GI protection
+- Evidence: WOEST trial showed dual therapy (clopidogrel + warfarin) was safer than triple therapy in AF patients undergoing PCI
+
+2.2 Aspirin + Clopidogrel (Dual Antiplatelet Therapy - DAPT)
+- Severity: Moderate-Major
+- Effect: Enhanced antiplatelet effect, increased bleeding
+- Mechanism: Complementary platelet inhibition (COX-1 + P2Y12)
+- Management: Standard duration 6-12 months post-PCI; balance ischemic vs bleeding risk
+- Evidence: CURE trial established DAPT benefit in ACS
+
+2.3 Aspirin + Direct Oral Anticoagulants (DOACs)
+- Severity: Major
+- Effect: Significant increase in major bleeding without proportional reduction in ischemic events
+- Mechanism: Dual antithrombotic pathways
+- Management: Minimize duration of combination therapy; prefer DOAC monotherapy when possible
+- Evidence: COMPASS trial showed rivaroxaban 2.5mg + aspirin superior to aspirin alone in stable ASCVD
+
+3. STATIN INTERACTIONS
+
+3.1 Simvastatin + Amiodarone
+- Severity: Major
+- Effect: Increased risk of rhabdomyolysis
+- Mechanism: Amiodarone inhibits CYP3A4, increasing simvastatin levels 2-3 fold
+- Management: Simvastatin dose should not exceed 20 mg/day with amiodarone
+- Alternative: Use atorvastatin or rosuvastatin (less CYP3A4 dependent)
+
+3.2 Statins + Grapefruit Juice
+- Severity: Moderate (simvastatin, atorvastatin, lovastatin)
+- Effect: Increased statin exposure, myopathy risk
+- Mechanism: Grapefruit inhibits intestinal CYP3A4
+- Management: Avoid large quantities (>1 quart/day); rosuvastatin and pravastatin unaffected
+
+3.3 Statins + Gemfibrozil
+- Severity: Major
+- Effect: 2-5 fold increase in statin levels, rhabdomyolysis risk
+- Mechanism: Gemfibrozil inhibits OATP1B1 transporter and glucuronidation
+- Management: Avoid combination; use fenofibrate instead if fibrate needed
+- Note: This interaction is worst with simvastatin and cerivastatin (withdrawn from market)
+
+4. ANTIDIABETIC INTERACTIONS
+
+4.1 Metformin + Alcohol
+- Severity: Major
+- Effect: Increased risk of lactic acidosis and hypoglycemia
+- Mechanism: Alcohol impairs hepatic gluconeogenesis + potentiates metformin's lactate effects
+- Management: Advise moderate alcohol intake; educate on symptoms of lactic acidosis
+
+4.2 Sulfonylureas + Fluconazole
+- Severity: Major
+- Effect: Severe, prolonged hypoglycemia
+- Mechanism: Fluconazole inhibits CYP2C9 metabolism of glipizide, glimepiride
+- Management: Monitor glucose closely; consider dose reduction of sulfonylurea
+- Duration: Effect persists 4-5 days after fluconazole discontinuation
+
+4.3 Metformin + Iodinated Contrast Media
+- Severity: Major
+- Effect: Risk of contrast-induced nephropathy leading to metformin accumulation and lactic acidosis
+- Mechanism: Contrast may cause transient renal impairment, reducing metformin clearance
+- Management: Hold metformin day of procedure; restart 48h after if renal function stable
+- Note: 2020 ACR guidelines recommend holding only if eGFR <30
+
+5. ANTIHYPERTENSIVE INTERACTIONS
+
+5.1 ACE Inhibitors + Potassium-Sparing Diuretics
+- Severity: Major
+- Effect: Hyperkalemia (risk increases 2-3 fold)
+- Mechanism: Both reduce potassium excretion
+- Management: Monitor serum potassium within 1 week of initiation, then periodically
+- High-risk patients: CKD, diabetes, elderly, heart failure
+
+5.2 ACE Inhibitors + ARBs (Dual RAAS Blockade)
+- Severity: Major
+- Effect: Increased risk of hypotension, hyperkalemia, and renal failure
+- Mechanism: Excessive RAAS suppression
+- Evidence: ONTARGET trial showed no benefit and increased harm with combination
+- Management: Do not combine (except rare specialist cases)
+
+5.3 Beta-Blockers + Non-Dihydropyridine CCBs (Verapamil/Diltiazem)
+- Severity: Major
+- Effect: Severe bradycardia, heart block, heart failure exacerbation
+- Mechanism: Additive negative chronotropic and inotropic effects
+- Management: Avoid combination; if necessary, use with extreme caution and monitoring
+
+6. PRACTICAL RECOMMENDATIONS FOR CLINICIANS
+
+6.1 Interaction Screening
+- Use electronic DDI checkers at point of prescribing
+- Prioritize "Major" severity interactions
+- Consider patient-specific factors: age, renal function, hepatic function, comorbidities
+
+6.2 Patient Education
+- Counsel patients about signs of bleeding with antithrombotic combinations
+- Warn about muscle pain/weakness with statin combinations
+- Educate diabetic patients about hypoglycemia symptoms with interacting drugs
+
+6.3 Monitoring Strategy
+| Combination | Monitor | Frequency |
+|-------------|---------|-----------|
+| Aspirin + Warfarin | INR, CBC, stool guaiac | Weekly initially, then monthly |
+| Statin + Interacting drug | CK, LFTs, symptoms | Baseline, 1 month, then q6 months |
+| ACEi + K-sparing diuretic | Serum K, creatinine | 1 week, 1 month, then q3 months |
+| Metformin + contrast | Serum creatinine | Before and 48h after procedure |
+| Sulfonylurea + CYP2C9 inhibitor | Blood glucose | Daily during co-administration |
+
+References:
+1. Lexicomp Drug Interactions Database. 2024.
+2. Dewilde WJ, et al. (WOEST) Lancet. 2013;381:1107-15.
+3. Yusuf S, et al. (CURE) N Engl J Med. 2001;345:494-502.
+4. Eikelboom JW, et al. (COMPASS) N Engl J Med. 2017;377:1319-30.
+5. American College of Radiology Manual on Contrast Media. 2024.

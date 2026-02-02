@@ -1,0 +1,83 @@
+Title: Clinical Review of Aspirin (Acetylsalicylic Acid) - 2024 Update
+
+1. INTRODUCTION
+
+Aspirin (acetylsalicylic acid, ASA) is one of the most widely used medications worldwide. Originally developed by Bayer in 1897, it remains a cornerstone of cardiovascular prevention and pain management. This review summarizes current evidence on aspirin's mechanisms, clinical applications, and safety profile.
+
+2. MECHANISM OF ACTION
+
+Aspirin irreversibly inhibits cyclooxygenase (COX) enzymes, specifically COX-1 and COX-2. By acetylating serine residue at position 529 of COX-1, aspirin blocks the synthesis of thromboxane A2 (TXA2), a potent platelet aggregator and vasoconstrictor. This irreversible inhibition lasts for the entire lifespan of the platelet (approximately 7-10 days), which is why even low-dose aspirin (75-100 mg daily) provides sustained antiplatelet effects.
+
+At higher doses (>500 mg), aspirin also inhibits COX-2, reducing prostaglandin E2 (PGE2) synthesis, which mediates inflammation and pain. This dual mechanism underlies aspirin's use as both an antiplatelet agent and an analgesic/anti-inflammatory drug.
+
+3. CARDIOVASCULAR PREVENTION
+
+3.1 Secondary Prevention
+Strong evidence supports aspirin use in secondary prevention of cardiovascular events. The Antithrombotic Trialists' Collaboration (ATT) meta-analysis of 16 trials (17,000 patients) demonstrated that aspirin reduces the risk of serious vascular events by approximately 25% in patients with established cardiovascular disease. Specifically:
+- Myocardial infarction risk reduction: 34%
+- Stroke risk reduction: 25%
+- Vascular death risk reduction: 15%
+
+Current guidelines (AHA/ACC 2023) recommend low-dose aspirin (75-100 mg/day) indefinitely for all patients with established atherosclerotic cardiovascular disease (ASCVD), unless contraindicated.
+
+3.2 Primary Prevention
+The role of aspirin in primary prevention has evolved significantly. Three landmark trials changed clinical practice:
+
+- ASPREE (2018): 19,114 elderly patients (≥70 years). No cardiovascular benefit, but increased major bleeding and all-cause mortality.
+- ARRIVE (2018): 12,546 moderate-risk patients. No significant reduction in cardiovascular events.
+- ASCEND (2018): 15,480 diabetic patients. Modest 12% reduction in vascular events, but offset by 29% increase in major bleeding.
+
+As a result, the USPSTF (2022) now recommends against initiating low-dose aspirin for primary prevention in adults ≥60 years. For adults aged 40-59 with ≥10% 10-year ASCVD risk, the decision should be individualized.
+
+4. DRUG INTERACTIONS
+
+4.1 Warfarin Interaction
+Concurrent use of aspirin and warfarin significantly increases the risk of major bleeding. The combination raises the relative risk of gastrointestinal bleeding by 2-3 fold compared to either agent alone. If dual therapy is clinically necessary (e.g., mechanical heart valve with recent ACS), the lowest effective aspirin dose (75 mg) should be used, and INR should be maintained at the lower end of the therapeutic range.
+
+4.2 NSAIDs Interaction
+Ibuprofen and other NSAIDs can interfere with aspirin's antiplatelet effect by competitively blocking COX-1. The FDA recommends taking aspirin at least 30 minutes before or 8 hours after ibuprofen to avoid this interaction.
+
+4.3 ACE Inhibitors
+Some evidence suggests aspirin may attenuate the antihypertensive and cardioprotective effects of ACE inhibitors, though the clinical significance remains debated. Current guidelines do not recommend avoiding this combination.
+
+5. ADVERSE EFFECTS
+
+5.1 Gastrointestinal Effects
+GI bleeding is the most common serious adverse effect. Risk increases with dose, age, and concurrent use of other antiplatelet/anticoagulant agents. The annual incidence of major GI bleeding with low-dose aspirin is approximately 0.12% per year (vs 0.07% with placebo).
+
+5.2 Intracranial Hemorrhage
+Low-dose aspirin increases the risk of hemorrhagic stroke by approximately 30-40%. The absolute risk increase is small (approximately 0.03% per year), but must be weighed against cardiovascular benefits.
+
+5.3 Aspirin-Exacerbated Respiratory Disease (AERD)
+Approximately 7% of adult asthmatics have AERD, characterized by asthma, nasal polyps, and aspirin sensitivity. Aspirin desensitization therapy can be considered in these patients.
+
+6. DOSING RECOMMENDATIONS
+
+| Indication | Dose | Duration |
+|-----------|------|----------|
+| Secondary CV prevention | 75-100 mg daily | Indefinite |
+| Acute MI (chew) | 162-325 mg | Initial dose |
+| Post-PCI (with P2Y12 inhibitor) | 81 mg daily | 6-12 months DAPT |
+| Pain/Fever | 325-650 mg every 4-6h | Short-term |
+| Anti-inflammatory | 3.6-5.4 g/day in divided doses | As needed |
+| Kawasaki disease | 80-100 mg/kg/day initially | Per protocol |
+
+7. EMERGING RESEARCH
+
+7.1 Cancer Prevention
+Multiple observational studies and RCTs suggest aspirin may reduce the incidence of colorectal cancer by 20-30% with long-term use (≥10 years). The USPSTF previously recommended aspirin for colorectal cancer prevention in select populations, but withdrew this recommendation in 2022 pending further evidence.
+
+7.2 COVID-19
+Several studies explored aspirin's role in COVID-19 management. A meta-analysis of 12 studies (45,000+ patients) showed a trend toward reduced mortality in hospitalized patients, but results were not statistically significant. Aspirin is not currently recommended as a COVID-19 treatment.
+
+8. CONCLUSION
+
+Aspirin remains a critical medication in cardiovascular medicine, with well-established benefits in secondary prevention. However, its role in primary prevention has narrowed significantly based on recent evidence. Clinicians should carefully weigh the benefits of cardiovascular risk reduction against the risks of bleeding when prescribing aspirin, particularly in older adults and those without established cardiovascular disease.
+
+References:
+1. Antithrombotic Trialists' Collaboration. Lancet. 2009;373:1849-60.
+2. McNeil JJ, et al. (ASPREE) N Engl J Med. 2018;379:1509-18.
+3. Gaziano JM, et al. (ARRIVE) Lancet. 2018;392:1036-46.
+4. ASCEND Study Collaborative Group. N Engl J Med. 2018;379:1529-39.
+5. USPSTF Recommendation Statement. JAMA. 2022;327:1577-84.
+6. FDA Drug Safety Communication. 2015. Ibuprofen-Aspirin Interaction.

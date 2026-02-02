@@ -1,0 +1,110 @@
+Title: Metformin Hydrochloride - Comprehensive Drug Profile
+
+1. DRUG INFORMATION
+
+Generic Name: Metformin Hydrochloride
+Brand Names: Glucophage, Glucophage XR, Fortamet, Glumetza, Riomet
+Drug Class: Biguanide antihyperglycemic agent
+FDA Approval: December 29, 1994
+Pregnancy Category: B (no evidence of fetal harm in animal studies)
+
+2. MECHANISM OF ACTION
+
+Metformin works through multiple mechanisms to lower blood glucose without causing hypoglycemia:
+
+2.1 Hepatic Glucose Production
+The primary mechanism is reduction of hepatic glucose output. Metformin activates AMP-activated protein kinase (AMPK), which suppresses gluconeogenesis in the liver. This accounts for approximately 75% of its glucose-lowering effect.
+
+2.2 Peripheral Glucose Uptake
+Metformin enhances insulin-stimulated glucose uptake in skeletal muscle by increasing GLUT4 transporter translocation to the cell surface. This improves peripheral insulin sensitivity.
+
+2.3 Intestinal Glucose Absorption
+Metformin modestly delays intestinal glucose absorption, contributing to reduced postprandial glucose excursions.
+
+2.4 GLP-1 Enhancement
+Recent research has shown that metformin increases circulating levels of glucagon-like peptide-1 (GLP-1), an incretin hormone that stimulates insulin secretion and suppresses glucagon release.
+
+3. CLINICAL INDICATIONS
+
+3.1 Type 2 Diabetes Mellitus (Primary Indication)
+Metformin is recommended as first-line pharmacotherapy for type 2 diabetes by virtually all major guidelines (ADA, EASD, AACE). The UKPDS trial demonstrated that metformin reduces:
+- Diabetes-related death: 42% reduction
+- All-cause mortality: 36% reduction
+- Myocardial infarction: 39% reduction
+
+3.2 Prediabetes Prevention
+The Diabetes Prevention Program (DPP) showed metformin reduces the risk of progression to type 2 diabetes by 31% in high-risk individuals. It is particularly effective in younger patients (<60 years) with BMI ≥35.
+
+3.3 Polycystic Ovary Syndrome (PCOS)
+While not FDA-approved for PCOS, metformin is commonly used off-label to improve menstrual regularity and ovulation. It reduces androgen levels and improves insulin resistance in PCOS patients.
+
+3.4 Gestational Diabetes
+The MiG trial (Metformin in Gestational diabetes) showed metformin was not associated with increased perinatal complications compared to insulin. However, some guidelines still prefer insulin as first-line treatment.
+
+4. DOSING AND ADMINISTRATION
+
+| Formulation | Starting Dose | Titration | Maximum Dose |
+|------------|---------------|-----------|--------------|
+| Immediate Release | 500 mg twice daily | Increase by 500 mg weekly | 2,550 mg/day |
+| Extended Release | 500 mg once daily | Increase by 500 mg weekly | 2,000 mg/day |
+| Liquid (Riomet) | 500 mg twice daily | Per physician | 2,550 mg/day |
+
+Key dosing principles:
+- Take with meals to minimize GI side effects
+- Titrate slowly to improve tolerance
+- Divide daily dose (IR formulation) for better GI tolerance
+- Monitor renal function: eGFR ≥30 mL/min required
+
+5. ADVERSE EFFECTS
+
+5.1 Gastrointestinal (Most Common: 20-30%)
+- Nausea, vomiting, diarrhea, abdominal discomfort
+- Usually transient (1-2 weeks) with slow titration
+- Extended-release formulation better tolerated
+
+5.2 Lactic Acidosis (Rare but Serious)
+- Incidence: approximately 3-10 cases per 100,000 patient-years
+- Risk factors: renal impairment (eGFR <30), hepatic disease, heart failure, excessive alcohol use, dehydration
+- Mortality rate: approximately 50% when it occurs
+- Symptoms: malaise, myalgias, respiratory distress, altered consciousness
+
+5.3 Vitamin B12 Deficiency
+- Occurs in 5-10% of long-term users
+- Mechanism: interference with calcium-dependent B12-intrinsic factor complex absorption in terminal ileum
+- Recommendation: periodic B12 monitoring, especially with symptoms of neuropathy
+
+6. DRUG INTERACTIONS
+
+6.1 Contrast Media (Iodinated)
+Metformin should be held at the time of or before iodinated contrast procedures in patients with eGFR 30-60, and should not be restarted until 48 hours after and renal function is confirmed stable.
+
+6.2 Carbonic Anhydrase Inhibitors (Topiramate, Zonisamide)
+These drugs reduce renal bicarbonate excretion and may increase the risk of lactic acidosis when combined with metformin.
+
+6.3 Alcohol
+Excessive alcohol intake potentiates the effect of metformin on lactate metabolism. Patients should limit alcohol consumption.
+
+7. CONTRAINDICATIONS
+
+- eGFR <30 mL/min/1.73m² (absolute)
+- Acute or chronic metabolic acidosis, including diabetic ketoacidosis
+- Known hypersensitivity to metformin
+- Use caution if eGFR 30-45 mL/min (do not initiate; may continue at reduced dose)
+
+8. EMERGING RESEARCH
+
+8.1 Anti-Aging Properties
+The TAME (Targeting Aging with Metformin) trial is investigating whether metformin can delay age-related diseases. Preclinical data suggests metformin activates AMPK and inhibits mTOR signaling, pathways implicated in aging.
+
+8.2 Cancer Prevention
+Epidemiological studies suggest metformin users have a 10-40% reduced risk of various cancers (breast, colorectal, pancreatic). Multiple mechanisms have been proposed, including AMPK activation, mTOR inhibition, and reduced insulin/IGF-1 signaling.
+
+8.3 Cardiovascular Outcomes
+Beyond glucose lowering, metformin has demonstrated independent cardiovascular benefits. The mechanisms include improved endothelial function, reduced oxidative stress, and anti-inflammatory effects.
+
+References:
+1. UK Prospective Diabetes Study (UKPDS) Group. Lancet. 1998;352:854-65.
+2. Diabetes Prevention Program Research Group. N Engl J Med. 2002;346:393-403.
+3. Rowan JA, et al. (MiG Trial) N Engl J Med. 2008;358:2003-15.
+4. American Diabetes Association. Diabetes Care. 2024;47(Suppl 1):S158-S178.
+5. de Jager J, et al. B12 deficiency. BMJ. 2010;340:c2181.
