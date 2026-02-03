@@ -8,59 +8,123 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Gen AI 학습 프로젝트 모노레포. 현재 포함:
 
-- `sdy/rag/` — 순수 Python으로 구현한 RAG (Retrieval-Augmented Generation) 파이프라인. LangChain/LlamaIndex 없이 ChromaDB + sentence-transformers + Claude Code CLI를 LLM 백엔드로 사용.
+- `sdy/rag/` — 순수 Python RAG 파이프라인. LangChain/LlamaIndex 없이 ChromaDB + sentence-transformers + Claude Code CLI 사용.
+- `sdy/rag-langchain/` — LangChain 기반 RAG 파이프라인. 순수 Python 구현과 비교 목적.
+- `sdy/rag-llamaindex/` — LlamaIndex 기반 RAG 파이프라인. 순수 Python/LangChain 구현과 비교 목적.
+- `sdy/agent/` — 의약품 연구용 ReAct 에이전트. PubMed/ClinicalTrials.gov API 연동, Claude Code CLI를 LLM 백엔드로 사용.
 
-## 2. Commands (sdy/rag)
+## 2. Commands
 
-모든 명령은 `sdy/rag/` 디렉토리에서 실행:
+각 서브프로젝트 디렉토리에서 실행. 공통 명령:
 
 ```bash
-# 의존성 설치
-uv sync --group dev
+uv sync --group dev                    # 의존성 설치
+uv run pytest                          # 테스트 실행
+uv run ruff check src tests --fix      # 린트
+uv run ruff format src tests           # 포맷
+```
 
-# 테스트 실행
-uv run pytest
-uv run pytest tests/test_loader.py                                    # 단일 파일
-uv run pytest tests/test_loader.py -k "test_load_file_returns_document"  # 단일 테스트
-
-# 린트 & 포맷
-uv run ruff check src tests --fix
-uv run ruff format src tests
-
-# CLI
+### sdy/rag (순수 Python RAG)
+```bash
 uv run rag hello          # smoke test
 uv run rag index           # 문서 인덱싱 (./data)
 uv run rag ask "question"  # 단일 질의
 uv run rag chat            # 대화형 REPL
 ```
 
-## 3. Architecture (sdy/rag)
+### sdy/rag-langchain (LangChain RAG)
+```bash
+uv run rag-lc hello        # smoke test
+uv run rag-lc index        # 문서 인덱싱
+uv run rag-lc ask "query"  # 단일 질의
+uv run rag-lc chat         # 대화형 REPL
+```
 
-파이프라인은 선형 데이터 흐름을 따르며, `src/rag/`의 각 모듈이 하나의 단계를 담당:
+### sdy/rag-llamaindex (LlamaIndex RAG)
+```bash
+uv run rag-li hello        # smoke test
+uv run rag-li index        # 문서 인덱싱
+uv run rag-li ask "query"  # 단일 질의
+uv run rag-li chat         # 대화형 REPL
+```
+
+### sdy/agent (ReAct Agent)
+```bash
+uv run agent hello              # smoke test
+uv run agent ask "question"     # 단일 질문
+uv run agent research "drug"    # 종합 연구 리포트
+```
+
+## 3. Architecture
+
+### 3.1 sdy/rag (순수 Python RAG)
+
+선형 데이터 흐름. `src/rag/`의 각 모듈이 하나의 단계를 담당:
 
 ```
 loader.py → splitter.py → embedder.py → store.py → retriever.py → generator.py
  (load)      (chunk)       (embed)      (ChromaDB)   (search)      (LLM call)
 ```
 
-- **`loader.py`** — `Document` dataclass (content + metadata), `.txt` 파일 로드
+- **`loader.py`** — `Document` dataclass, `.txt` 파일 로드
 - **`splitter.py`** — 문자 단위 청킹, 크기/오버랩 설정 가능
-- **`embedder.py`** — Singleton `SentenceTransformer` (`all-MiniLM-L6-v2`, 384-dim), lazy-load
+- **`embedder.py`** — Singleton `SentenceTransformer` (`all-MiniLM-L6-v2`, 384-dim)
 - **`store.py`** — `VectorStore` (ChromaDB, cosine similarity); `SearchResult` dataclass
-- **`retriever.py`** — `Retriever` facade: query string → embed → vector search
-- **`generator.py`** — `Generator`: `claude -p` subprocess 호출로 LLM 답변 생성
-- **`pipeline.py`** — 오케스트레이션: `index_documents()` (load→store), `ask_question()` (retrieve→generate)
-- **`cli.py`** — Typer CLI: `index`, `ask`, `chat`, `hello` 명령
+- **`retriever.py`** — `Retriever` facade: query → embed → vector search
+- **`generator.py`** — `claude -p` subprocess 호출로 LLM 답변 생성
+- **`pipeline.py`** — 오케스트레이션: `index_documents()`, `ask_question()`
+- **`cli.py`** — Typer CLI: `index`, `ask`, `chat`, `hello`
 
-핵심 설계: `pipeline.py`는 CLI 의존 없는 순수 로직 레이어. `cli.py`는 파이프라인 함수를 호출하고 출력을 포맷하는 얇은 래퍼.
+### 3.2 sdy/rag-langchain (LangChain RAG)
+
+LangChain 추상화 레이어 활용. `src/rag_langchain/`:
+
+- **`ingestion.py`** — LangChain 문서 로딩 & 분할
+- **`chain.py`** — LangChain retrieval chain
+- **`llm.py`** — LangChain LLM 설정
+- **`pipeline.py`** — 오케스트레이션: `index_documents()`, `ask_question()`
+- **`cli.py`** — Typer CLI: `index`, `ask`, `chat`, `hello`
+
+### 3.3 sdy/rag-llamaindex (LlamaIndex RAG)
+
+LlamaIndex 프레임워크 활용. `src/rag_llamaindex/`:
+
+- **`ingestion.py`** — LlamaIndex 문서 로딩
+- **`query.py`** — LlamaIndex query engine
+- **`llm.py`** — LlamaIndex LLM 설정
+- **`pipeline.py`** — 오케스트레이션: `index_documents()`, `ask_question()`
+- **`cli.py`** — Typer CLI: `index`, `ask`, `chat`, `hello`
+
+### 3.4 sdy/agent (ReAct Agent)
+
+ReAct (Reasoning + Acting) 루프. `src/agent/`:
+
+```
+Query → LLM → Parse Response → Execute Tool → Add Observation → (반복)
+```
+
+- **`core/agent.py`** — ReAct Agent 루프
+- **`core/parser.py`** — LLM 응답 JSON 파서
+- **`core/types.py`** — `AgentAction`, `AgentFinish`, `AgentStep`, `AgentResult`
+- **`llm/client.py`** — Claude CLI subprocess 래퍼
+- **`llm/prompts.py`** — 시스템 프롬프트 & JSON 포맷
+- **`tools/registry.py`** — 도구 등록/실행/프롬프트 생성
+- **`tools/pubmed.py`** — PubMed API (NCBI E-utilities)
+- **`tools/clinical_trials.py`** — ClinicalTrials.gov v2 API
+- **`report.py`** — 구조화된 연구 리포트 생성
+- **`pipeline.py`** / **`cli.py`** — 오케스트레이션 & CLI
+
+핵심 설계: 모든 프로젝트에서 `pipeline.py`는 CLI 의존 없는 순수 로직 레이어. `cli.py`는 얇은 래퍼.
 
 ## 4. Conventions
 
-- **Python 3.12+**, src layout (`src/rag/`), `uv` 패키지 매니저
+- **Python 3.12+**, src layout (`src/<package>/`), `uv` 패키지 매니저
 - **Linting**: ruff (rules: `E, F, I, W`; line-length: 88; double quotes)
 - **Pre-commit**: trailing whitespace, end-of-file fixer, ruff check+format
 - **Build**: hatchling backend
-- **Environment**: `.env` 파일에 `OPENAI_API_KEY` (`.env.example` 참조). 현재 generation은 Claude Code CLI 사용
+- **LLM Backend**: Claude Code CLI (`claude -p`). 모든 프로젝트 공통
+- **주요 의존성**: chromadb, sentence-transformers (RAG 공통); langchain-* (rag-langchain); llama-index-* (rag-llamaindex); httpx (agent)
+- **외부 API**: PubMed, ClinicalTrials.gov (agent, API 키 불요)
 
 ---
 
